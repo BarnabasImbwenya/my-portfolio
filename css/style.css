@@ -31,7 +31,7 @@ p {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     background-color: rgb(136, 232, 232);
     padding: 10px;
     border-radius: 10px;
