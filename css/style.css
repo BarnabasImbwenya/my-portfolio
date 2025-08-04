@@ -3,46 +3,63 @@
     justify-content: center;
     font-size: 40px;
     color: rgb(75, 111, 209);
-    border-style: solid;
+    border: 2px solid rgb(75, 111, 209);
+    border-radius: 10px;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 20px;
     background-color: bisque;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.7px;
+    color: #222;
     
 }
 h1 {
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 26px;
+    margin-top: 30px;
+    font-weight: 600;
 }
 
 p {
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 1em;
 }
 
 nav {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     background-color: rgb(136, 232, 232);
     padding: 10px;
     border-radius: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 a {
     background-color: rgb(132, 208, 233);
-    padding: 10px;
+    padding: 10px 20px;
     margin: 5px;
     border-radius: 10px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
 }
 
 a:hover {
@@ -53,36 +70,40 @@ a:hover {
 }
 
 form {
-    border: solid;
-    border-color: rgb(196, 193, 193);
-    max-width: 50%;
-    margin: auto;
-    padding: 1rem;
-    background-color: rgb(205, 180, 180);
+    border: 1px solid #ccc;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f2eaea;
+    border-radius: 10px;
 }
 
 label {
     display: block;
+    margin-top: 15px;    
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
+    border: 1px solid #999;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .button {
-    font-size: 20px;
+    font-size: 18px;
     background-color: rgb(89, 89, 240);
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 20px;
-    padding: 10px;
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
     border-radius: 10px;
-    border-style: none;
+    border: none;
     color: white;
+    transition: background 0.3s ease;
 }
 
 .button:hover {
@@ -90,22 +111,34 @@ input, textarea {
 }
 
 .back-to-home {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 img {
-    width: 25%;
-    display: flex;
-    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
     height: auto;
     border-radius: 10px;
 }
 
-@media (max-media: 768px) {
-    display: block;
-    width: 100%;
-    height: auto;
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
 }
