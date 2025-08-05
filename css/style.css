@@ -157,13 +157,18 @@ img:hover {
     nav {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
-    .head {
-        font-size: 24px;
-        text-align: center;
-        padding: 10px;
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
     
+    .head h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
     body {
         padding: 10px;
     }
@@ -187,7 +192,7 @@ img:hover {
         margin: 0 auto;
     }
     .logo {
-        width: 25%;
+        width: 80px;
     }
 }
 
