@@ -26,10 +26,7 @@ h1 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
-    font-weight: 700;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
+    animation: bounce 1s ease;
 }
 
 h2 {
@@ -98,19 +95,22 @@ input, textarea {
 }
 
 .button {
-    font-size: 18px;
+    font-size: 20px;
     background-color: rgb(89, 89, 240);
-    display: block;
-    margin: 20px auto 0 auto;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
     border-radius: 10px;
-    border: none;
+    border-style: none;
     color: white;
-    transition: background 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .button:hover {
     background-color: rgb(53, 53, 237);
+    transform: scale(1.05);
 }
 
 .back-to-home {
@@ -119,12 +119,16 @@ input, textarea {
 }
 
 img {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 20px auto;
+    width: 25%;
+    display: flex;
+    margin: auto;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.4s ease;
+    }
+
+img:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -143,5 +147,15 @@ img {
 
     form {
         width: 90%;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
     }
 }
