@@ -29,6 +29,7 @@ h1 {
     word-break: break-word;
     text-align: center;
     font-size: clamp(24px, 5vw, 36px);
+    padding: 10px;
     margin-bottom: 10px;
     animation: bounce 1s ease;
     animation-fill-mode: both;
