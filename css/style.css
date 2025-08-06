@@ -27,7 +27,9 @@ header.head {
 }
 
 .logo {
-  height: 60px;
+  max-height: 100px;
+  height: auto;
+  width: auto;
   align-self: center;
 }
 
@@ -41,6 +43,7 @@ header.head {
 /* ===== Navigation ===== */
 .nav-links {
   display: flex;
+  justify-content: right;
   gap: 1rem;
 }
 
