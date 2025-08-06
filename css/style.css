@@ -11,6 +11,8 @@ body {
   color: #222222;
   line-height: 1.6;
   padding: 0;
+  width: 80%;
+  margin: auto;
 }
 
 /* ===== Header ===== */
@@ -295,4 +297,11 @@ footer {
 
 .resume button:hover {
   background-color: #558be0;
+}
+
+img {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  
 }
