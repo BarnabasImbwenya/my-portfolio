@@ -187,3 +187,27 @@ footer {
 .social-icons img:hover {
     transform: scale(1.2);
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  display: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background-color: #ddd;
+}
+
+.back-to-top.show {
+  display: block;
+}
