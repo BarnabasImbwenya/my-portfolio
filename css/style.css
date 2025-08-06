@@ -47,6 +47,11 @@ header.head {
   gap: 1rem;
 }
 
+nav {
+  background-color: #ccc;
+  padding: 10px;
+}
+
 .nav-links a {
   text-decoration: none;
   color: #0077cc;
@@ -307,4 +312,27 @@ img {
   width: 100%;
   margin: auto;
   
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.607);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.242);
+  
+}
+
+label {
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+
+}
+
+.button {
+  display: block;
+  margin: auto;
 }
