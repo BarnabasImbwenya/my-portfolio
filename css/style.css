@@ -383,3 +383,27 @@ h1 {
   .back-to-home:hover {
     color: #2d94de;
   }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .learn-more {
+    margin-top: 30px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    border: #777 solid;
+    text-align: center;
+    animation: bounce 2s infinite;
+    font-size: 1.1em;
+    background-color: #ccc;
+    
+  }
+
+  
