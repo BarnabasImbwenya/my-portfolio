@@ -403,7 +403,12 @@ h1 {
     animation: bounce 2s infinite;
     font-size: 1.1em;
     background-color: #ccc;
+    text-decoration: none;
     
+  }
+
+  .learn-more:hover {
+    background-color: #555;
   }
 
   
