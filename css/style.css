@@ -112,7 +112,7 @@ h3 {
 }
 
 .home-photo {
-    background-image: url('/images/greetings.jpg');
+    background-image: url('images/greetings.jpg');
     background-size: cover;      /* Make the image cover the whole section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@ h3 {
 }
 
 .about-photo {
-    background-image: url('/images/office1.jpg');
+    background-image: url('images/office1.jpg');
     background-position: center;
     background-size: cover;
     color: green;
@@ -130,7 +130,7 @@ h3 {
 }
 
 .projects-photo {
-    background-image: url('/images/working.jpg');
+    background-image: url('images/working.jpg');
 }
 
 form {
