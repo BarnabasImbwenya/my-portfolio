@@ -163,6 +163,37 @@ button {
     font-size: 1.05em;
 }
 
+.resume button {
+    width: 25%;
+    background-color: rgb(5, 164, 5);
+    border: none;
+    padding: 5px;
+    animation: bounce 2s infinite;
+}
+
+.resume p {
+    background-color: gray;
+    width: 15%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.bounce-btn {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+   
+}
+
 @media (max-width: 900px) {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
