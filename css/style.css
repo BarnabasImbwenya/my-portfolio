@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(233, 232, 230);
+    background-color: rgb(235, 234, 234);
     padding: 20px;
     line-height: 1.6;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,6 +10,37 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    border: blue solid;
+    border-radius: 10px;
+}
+
+.head img {
+    height: 80px;
+    width: auto;  
+    margin-right: 10px;
+    padding: 10px;
+    
+}
+
+header h1 {
+    flex: 1;
+    text-align: center; /* Centers "My Portfolio" in its flex space */
+    margin: 0;
+    color: blue;
+}
+
+nav {
+    margin-top: 30px;
+    background-color: rgb(157, 157, 157);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -22,6 +53,13 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 nav ul li a {
