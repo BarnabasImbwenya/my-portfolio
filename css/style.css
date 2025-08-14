@@ -112,7 +112,6 @@ h3 {
 }
 
 .home-photo {
-    background-image: url('/images/greetings.jpg');
     background-size: cover;      /* Make the image cover the whole section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
