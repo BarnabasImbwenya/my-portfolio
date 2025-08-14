@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: auto;
 }
@@ -52,27 +52,31 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end; /* desktop: keep on the right */
+    align-items: center;
+    flex-wrap: wrap;           /* allows wrapping on smaller widths */
+    gap: 10px 16px;            /* row x column spacing */
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
-    padding: 10px;
+    padding: 0px;
 }
 
 nav ul li:hover {
     background-color: rgb(120, 170, 239);
-    padding: 10px;
     border-radius: 10px;
 }
 
 nav ul li a {
+    display: inline-block;
+    padding: 10px 14px;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    border-radius: 10px; /* so hover bg looks like a pill */
 }
 
 h2 {
@@ -197,10 +201,28 @@ button {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .head img {
+        height: 60px;
+    }
 }
 
 @media (max-width: 600px) {
     .project-grid {
         grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
     }
 }
